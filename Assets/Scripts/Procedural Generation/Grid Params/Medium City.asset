@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b18f32739cd66348a448485d63a7f5a, type: 3}
+  m_Name: Medium City
+  m_EditorClassIdentifier: 
+  width: 7
+  height: 7
+  shapeWidth: 2
+  shapeHeight: 2
+  shapeDepth: 2
+  maxRandomHeight: 25
+  maxRandomWidth: 7
+  maxRandomDepth: 7
+  maxRandomHeightOffset: 1
+  maxRandomWidthOffset: 1
+  maxRandomDepthOffset: 1
+  randomSeed: 1
+  ShapeType: 0
+  makeShapesStatic: 1
+  shouldGenerateRigidBodies: 0
+  shouldGenerateTriggers: 1
+  marginBetweenShapes: {x: 15, y: 1, z: 15}
+  defaultMaterials:
+  - {fileID: 2100000, guid: 2df1f3693ce610242bec9390ee7ab2b6, type: 2}
+  - {fileID: 2100000, guid: 216992e8c9c7ebb468a6d7cead48af64, type: 2}
+  - {fileID: 2100000, guid: 9efcbc445f86e7341be0966216a7ba52, type: 2}
+  shaderName: Universal Render Pipeline/Lit
+  proceduralMaterialsToGenerate: 0
+  roadblockCount: 0
+  roadblockMaterial: {fileID: 2100000, guid: fc1a2f660828fc94a8462bed53b4d4f5, type: 2}

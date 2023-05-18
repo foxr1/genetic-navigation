@@ -1,0 +1,195 @@
+OBSERVATION LIST
+1-5
+mlagents-learn config/moveToGoal7-4.yaml --run-id=final_large_40rb_obvs1 --env=Build\Windows_Training_M1\reinforcement_dissertation.exe --width=640 --height=640 --quality-level=0
+C:\Windows\System32\taskkill.exe /f /im reinforcement_dissertation.exe
+mlagents-learn config/moveToGoal7-4.yaml --run-id=final_large_40rb_obvs2 --env=Build\Windows_Training_M2\reinforcement_dissertation.exe --width=640 --height=640 --quality-level=0
+C:\Windows\System32\taskkill.exe /f /im reinforcement_dissertation.exe
+mlagents-learn config/moveToGoal7-4.yaml --run-id=final_large_40rb_obvs3 --env=Build\Windows_Training_M3\reinforcement_dissertation.exe --width=640 --height=640 --quality-level=0
+C:\Windows\System32\taskkill.exe /f /im reinforcement_dissertation.exe
+mlagents-learn config/moveToGoal7-4.yaml --run-id=final_large_40rb_obvs4 --env=Build\Windows_Training_M4\reinforcement_dissertation.exe --width=640 --height=640 --quality-level=0
+C:\Windows\System32\taskkill.exe /f /im reinforcement_dissertation.exe
+mlagents-learn config/moveToGoal7-4.yaml --run-id=final_large_40rb_obvs5 --env=Build\Windows_Training_M5\reinforcement_dissertation.exe --width=640 --height=640 --quality-level=0
+C:\Windows\System32\taskkill.exe /f /im reinforcement_dissertation.exe
+
+6-8
+mlagents-learn config/moveToGoal7-4.yaml --run-id=final_large_40rb_obvs6 --env=Build\Windows_Training_M6\reinforcement_dissertation.exe --width=640 --height=640 --quality-level=0
+C:\Windows\System32\taskkill.exe /f /im reinforcement_dissertation.exe
+mlagents-learn config/moveToGoal7-4.yaml --run-id=final_large_40rb_obvs7 --env=Build\Windows_Training_M7\reinforcement_dissertation.exe --width=640 --height=640 --quality-level=0
+C:\Windows\System32\taskkill.exe /f /im reinforcement_dissertation.exe
+mlagents-learn config/moveToGoal7-4.yaml --run-id=final_large_40rb_obvs8 --env=Build\Windows_Training_M8\reinforcement_dissertation.exe --width=640 --height=640 --quality-level=0
+C:\Windows\System32\taskkill.exe /f /im reinforcement_dissertation.exe
+
+CURIOSITY
+mlagents-learn config/moveToGoal7-4.yaml --run-id=final_large_0rb_obvs6_with_curiosity --env=Build\Windows_Training_No_Roadblocks\reinforcement_dissertation.exe --width=640 --height=640 --quality-level=0
+C:\Windows\System32\taskkill.exe /f /im reinforcement_dissertation.exe
+mlagents-learn config/moveToGoal7-5.yaml --run-id=final_large_0rb_obvs6_without_curiosity --env=Build\Windows_Training_No_Roadblocks\reinforcement_dissertation.exe --width=640 --height=640 --quality-level=0
+C:\Windows\System32\taskkill.exe /f /im reinforcement_dissertation.exe
+mlagents-learn config/moveToGoal7-4.yaml --run-id=final_large_40rb_obvs6_with_curiosity  --env=Build\Windows_Training_M6\reinforcement_dissertation.exe --width=640 --height=640 --quality-level=0
+C:\Windows\System32\taskkill.exe /f /im reinforcement_dissertation.exe
+mlagents-learn config/moveToGoal7-5.yaml --run-id=final_large_40rb_obvs6_without_curiosity  --env=Build\Windows_Training_M6\reinforcement_dissertation.exe --width=640 --height=640 --quality-level=0
+C:\Windows\System32\taskkill.exe /f /im reinforcement_dissertation.exe
+
+ROADBLOCKS
+mlagents-learn config/moveToGoal7-4.yaml --run-id=final_large_80rb_obvs6 --env=Build\Windows_Training_80Roadblocks\reinforcement_dissertation.exe --width=640 --height=640 --quality-level=0
+C:\Windows\System32\taskkill.exe /f /im reinforcement_dissertation.exe
+mlagents-learn config/moveToGoal7-4.yaml --run-id=final_large_120rb_obvs6 --env=Build\Windows_Training_120Roadblocks\reinforcement_dissertation.exe --width=640 --height=640 --quality-level=0
+C:\Windows\System32\taskkill.exe /f /im reinforcement_dissertation.exe
+
+HIDDEN UNITS
+mlagents-learn config/moveToGoal7-4-hu128.yaml --run-id=final_large_40rb_obvs6_hu128 --env=Build\Windows_Training_M6\reinforcement_dissertation.exe --width=640 --height=640 --quality-level=0
+C:\Windows\System32\taskkill.exe /f /im reinforcement_dissertation.exe
+mlagents-learn config/moveToGoal7-4-hu512.yaml --run-id=final_large_40rb_obvs6_hu512_v2 --env=Build\Windows_Training_M6\reinforcement_dissertation.exe --width=640 --height=640 --quality-level=0
+C:\Windows\System32\taskkill.exe /f /im reinforcement_dissertation.exe
+
+LAYERS
+mlagents-learn config/moveToGoal7-4-lay1.yaml --run-id=final_large_40rb_obvs6_lay1 --env=Build\Windows_Training_M6\reinforcement_dissertation.exe --width=640 --height=640 --quality-level=0
+C:\Windows\System32\taskkill.exe /f /im reinforcement_dissertation.exe
+mlagents-learn config/moveToGoal7-4-lay2.yaml --run-id=final_large_40rb_obvs6_lay2 --env=Build\Windows_Training_M6\reinforcement_dissertation.exe --width=640 --height=640 --quality-level=0
+C:\Windows\System32\taskkill.exe /f /im reinforcement_dissertation.exe
+mlagents-learn config/moveToGoal7-4-lay3.yaml --run-id=final_large_40rb_obvs6_lay3 --env=Build\Windows_Training_M6\reinforcement_dissertation.exe --width=640 --height=640 --quality-level=0
+C:\Windows\System32\taskkill.exe /f /im reinforcement_dissertation.exe
+
+mlagents-learn config/moveToGoal7-4.yaml --run-id=final_small_0rb_obvs6 --env=Build\Windows_Training_Small_City_No_Roadblocks\reinforcement_dissertation.exe --width=640 --height=640 --quality-level=0
+C:\Windows\System32\taskkill.exe /f /im reinforcement_dissertation.exe
+mlagents-learn config/moveToGoal7-4.yaml --run-id=final_medium_0rb_obvs6 --env=Build\Windows_Training_Medium_City_No_Roadblocks\reinforcement_dissertation.exe --width=640 --height=640 --quality-level=0
+C:\Windows\System32\taskkill.exe /f /im reinforcement_dissertation.exe
+
+CITY SIZE
+mlagents-learn config/moveToGoal7-4.yaml --run-id=final_small_0rb_obvs6 --env=Build\Windows_Training_Small_City_No_Roadblocks\reinforcement_dissertation.exe --width=640 --height=640 --quality-level=0
+C:\Windows\System32\taskkill.exe /f /im reinforcement_dissertation.exe
+mlagents-learn config/moveToGoal7-4.yaml --run-id=final_medium_0rb_obvs6 --env=Build\Windows_Training_Medium_City_No_Roadblocks\reinforcement_dissertation.exe --width=640 --height=640 --quality-level=0
+C:\Windows\System32\taskkill.exe /f /im reinforcement_dissertation.exe
+mlagents-learn config/moveToGoal7-4.yaml --run-id=final_large_40rb_obvs6_v2 --env=Build\Windows_Training_M6\reinforcement_dissertation.exe --width=640 --height=640 --quality-level=0
+C:\Windows\System32\taskkill.exe /f /im reinforcement_dissertation.exe
+mlagents-learn config/moveToGoal7-4.yaml --run-id=final_large_40rb_obvs6_2branches --env=Build\Windows_Training_2Branches\reinforcement_dissertation.exe --width=640 --height=640 --quality-level=0
+C:\Windows\System32\taskkill.exe /f /im reinforcement_dissertation.exe
+
+TIMED
+mlagents-learn config/moveToGoal7-4.yaml --run-id=final_large_40rb_timed5sec_obvs6 --env=Build\Windows_Training_Timed5Sec\reinforcement_dissertation.exe --width=640 --height=640 --quality-level=0
+C:\Windows\System32\taskkill.exe /f /im reinforcement_dissertation.exe
+mlagents-learn config/moveToGoal7-4.yaml --run-id=final_large_40rb_timed10sec_obvs6 --env=Build\Windows_Training_Timed10Sec\reinforcement_dissertation.exe --width=640 --height=640 --quality-level=0
+C:\Windows\System32\taskkill.exe /f /im reinforcement_dissertation.exe
+
+RANDOM START
+mlagents-learn config/moveToGoal7-4.yaml --run-id=final_large_40rb_randomstart_obvs6 --env=Build\Windows_Training_Random_Start\reinforcement_dissertation.exe --width=640 --height=640 --quality-level=0
+C:\Windows\System32\taskkill.exe /f /im reinforcement_dissertation.exe
+
+CURIOSITY STRENGTH
+mlagents-learn config/moveToGoal7-4-cs0.001.yaml --run-id=final_large_40rb_cs0001_obvs6 --env=Build\Windows_Training_M6\reinforcement_dissertation.exe --width=640 --height=640 --quality-level=0
+C:\Windows\System32\taskkill.exe /f /im reinforcement_dissertation.exe
+mlagents-learn config/moveToGoal7-4-cs0.01.yaml --run-id=final_large_40rb_cs001_obvs6 --env=Build\Windows_Training_M6\reinforcement_dissertation.exe --width=640 --height=640 --quality-level=0
+C:\Windows\System32\taskkill.exe /f /im reinforcement_dissertation.exe
+mlagents-learn config/moveToGoal7-4-cs0.1.yaml --run-id=final_large_40rb_cs01_obvs6 --env=Build\Windows_Training_M6\reinforcement_dissertation.exe --width=640 --height=640 --quality-level=0
+C:\Windows\System32\taskkill.exe /f /im reinforcement_dissertation.exe
+mlagents-learn config/moveToGoal7-4-cs0.2.yaml --run-id=final_large_40rb_cs02_obvs6 --env=Build\Windows_Training_M6\reinforcement_dissertation.exe --width=640 --height=640 --quality-level=0
+C:\Windows\System32\taskkill.exe /f /im reinforcement_dissertation.exe
+
+CURIOSITY GAMMA
+mlagents-learn config/moveToGoal7-4-g08.yaml --run-id=final_large_40rb_g08_obvs6 --env=Build\Windows_Training_M6\reinforcement_dissertation.exe --width=640 --height=640 --quality-level=0
+C:\Windows\System32\taskkill.exe /f /im reinforcement_dissertation.exe
+mlagents-learn config/moveToGoal7-4-g09.yaml --run-id=final_large_40rb_g09_obvs6 --env=Build\Windows_Training_M6\reinforcement_dissertation.exe --width=640 --height=640 --quality-level=0
+C:\Windows\System32\taskkill.exe /f /im reinforcement_dissertation.exe
+mlagents-learn config/moveToGoal7-4-g099.yaml --run-id=final_large_40rb_g099_obvs6 --env=Build\Windows_Training_M6\reinforcement_dissertation.exe --width=640 --height=640 --quality-level=0
+C:\Windows\System32\taskkill.exe /f /im reinforcement_dissertation.exe
+
+BUFFER SIZE
+mlagents-learn config/moveToGoal7-4-bf2048.yaml --run-id=final_large_40rb_obvs6_bf2048 --env=Build\Windows_Training_M6\reinforcement_dissertation.exe --width=640 --height=640 --quality-level=0
+C:\Windows\System32\taskkill.exe /f /im reinforcement_dissertation.exe
+mlagents-learn config/moveToGoal7-4-bf102400.yaml --run-id=final_large_40rb_obvs6_bf102400 --env=Build\Windows_Training_M6\reinforcement_dissertation.exe --width=640 --height=640 --quality-level=0
+C:\Windows\System32\taskkill.exe /f /im reinforcement_dissertation.exe
+mlagents-learn config/moveToGoal7-4-bf409600.yaml --run-id=final_large_40rb_obvs6_bf409600 --env=Build\Windows_Training_M6\reinforcement_dissertation.exe --width=640 --height=640 --quality-level=0
+C:\Windows\System32\taskkill.exe /f /im reinforcement_dissertation.exe
+
+EPOCHS
+mlagents-learn config/moveToGoal7-4-e6.yaml --run-id=final_large_40rb_obvs6_e6 --env=Build\Windows_Training_M6\reinforcement_dissertation.exe --width=640 --height=640 --quality-level=0
+C:\Windows\System32\taskkill.exe /f /im reinforcement_dissertation.exe
+mlagents-learn config/moveToGoal7-4-e8.yaml --run-id=final_large_40rb_obvs6_e8 --env=Build\Windows_Training_M6\reinforcement_dissertation.exe --width=640 --height=640 --quality-level=0
+C:\Windows\System32\taskkill.exe /f /im reinforcement_dissertation.exe
+mlagents-learn config/moveToGoal7-4-e10.yaml --run-id=final_large_40rb_obvs6_e10 --env=Build\Windows_Training_M6\reinforcement_dissertation.exe --width=640 --height=640 --quality-level=0
+C:\Windows\System32\taskkill.exe /f /im reinforcement_dissertation.exe
+
+BATCH SIZE
+mlagents-learn config/moveToGoal7-4-ba64.yaml --run-id=final_large_40rb_obvs6_ba64 --env=Build\Windows_Training_M6\reinforcement_dissertation.exe --width=640 --height=640 --quality-level=0
+C:\Windows\System32\taskkill.exe /f /im reinforcement_dissertation.exe
+mlagents-learn config/moveToGoal7-4-ba128.yaml --run-id=final_large_40rb_obvs6_ba128 --env=Build\Windows_Training_M6\reinforcement_dissertation.exe --width=640 --height=640 --quality-level=0
+C:\Windows\System32\taskkill.exe /f /im reinforcement_dissertation.exe
+mlagents-learn config/moveToGoal7-4-ba256.yaml --run-id=final_large_40rb_obvs6_ba256 --env=Build\Windows_Training_M6\reinforcement_dissertation.exe --width=640 --height=640 --quality-level=0
+C:\Windows\System32\taskkill.exe /f /im reinforcement_dissertation.exe
+
+TIME HORIZON
+mlagents-learn config/moveToGoal7-4-th32.yaml --run-id=final_large_40rb_obvs6_th32 --env=Build\Windows_Training_M6\reinforcement_dissertation.exe --width=640 --height=640 --quality-level=0
+C:\Windows\System32\taskkill.exe /f /im reinforcement_dissertation.exe
+mlagents-learn config/moveToGoal7-4-th128.yaml --run-id=final_large_40rb_obvs6_th128 --env=Build\Windows_Training_M6\reinforcement_dissertation.exe --width=640 --height=640 --quality-level=0
+C:\Windows\System32\taskkill.exe /f /im reinforcement_dissertation.exe
+mlagents-learn config/moveToGoal7-4-th512.yaml --run-id=final_large_40rb_obvs6_th512 --env=Build\Windows_Training_M6\reinforcement_dissertation.exe --width=640 --height=640 --quality-level=0
+C:\Windows\System32\taskkill.exe /f /im reinforcement_dissertation.exe
+mlagents-learn config/moveToGoal7-4-th2048.yaml --run-id=final_large_40rb_obvs6_th2048 --env=Build\Windows_Training_M6\reinforcement_dissertation.exe --width=640 --height=640 --quality-level=0
+C:\Windows\System32\taskkill.exe /f /im reinforcement_dissertation.exe
+
+LAMDA
+mlagents-learn config/moveToGoal7-4-l09.yaml --run-id=final_large_40rb_obvs6_l09 --env=Build\Windows_Training_M6\reinforcement_dissertation.exe --width=640 --height=640 --quality-level=0
+C:\Windows\System32\taskkill.exe /f /im reinforcement_dissertation.exe
+mlagents-learn config/moveToGoal7-4-l095.yaml --run-id=final_large_40rb_obvs6_l095 --env=Build\Windows_Training_M6\reinforcement_dissertation.exe --width=640 --height=640 --quality-level=0
+C:\Windows\System32\taskkill.exe /f /im reinforcement_dissertation.exe
+
+BETA
+mlagents-learn config/moveToGoal7-4-be00001.yaml --run-id=final_large_40rb_obvs6_be00001 --env=Build\Windows_Training_M6\reinforcement_dissertation.exe --width=640 --height=640 --quality-level=0
+C:\Windows\System32\taskkill.exe /f /im reinforcement_dissertation.exe
+mlagents-learn config/moveToGoal7-4-be001.yaml --run-id=final_large_40rb_obvs6_be001 --env=Build\Windows_Training_M6\reinforcement_dissertation.exe --width=640 --height=640 --quality-level=0
+C:\Windows\System32\taskkill.exe /f /im reinforcement_dissertation.exe
+
+EPSILON
+mlagents-learn config/moveToGoal7-4-e01.yaml --run-id=final_large_40rb_obvs6_e01 --env=Build\Windows_Training_M6\reinforcement_dissertation.exe --width=640 --height=640 --quality-level=0
+C:\Windows\System32\taskkill.exe /f /im reinforcement_dissertation.exe
+mlagents-learn config/moveToGoal7-4-e03.yaml --run-id=final_large_40rb_obvs6_e03 --env=Build\Windows_Training_M6\reinforcement_dissertation.exe --width=640 --height=640 --quality-level=0
+C:\Windows\System32\taskkill.exe /f /im reinforcement_dissertation.exe
+
+RND REWARD
+mlagents-learn config/moveToGoal7-4-rnd.yaml --run-id=final_large_40rb_obvs6_rnd_v2 --env=Build\Windows_Training_M6\reinforcement_dissertation.exe --width=640 --height=640 --quality-level=0
+C:\Windows\System32\taskkill.exe /f /im reinforcement_dissertation.exe
+
+FINAL
+mlagents-learn config/moveToGoal7-4-final-v2.yaml --run-id=final_large_40rb_obvs6_final_v15 --env=Build\Windows_Training_M6\reinforcement_dissertation.exe --width=640 --height=640 --quality-level=0
+C:\Windows\System32\taskkill.exe /f /im reinforcement_dissertation.exe
+
+FINAL SHORT
+mlagents-learn config/moveToGoal7-4-final-vShort.yaml --run-id=final_large_40rb_obvs6_final_short --env=Build\Windows_Training_M6\reinforcement_dissertation.exe --width=640 --height=640 --quality-level=0
+C:\Windows\System32\taskkill.exe /f /im reinforcement_dissertation.exe
+
+FINAL TIMED
+mlagents-learn config/moveToGoal7-4-final-v2.yaml --run-id=final_large_40rb_timed2sec_obvs6_final --env=Build\Windows_Training_Timed2Sec\reinforcement_dissertation.exe --width=640 --height=640 --quality-level=0
+C:\Windows\System32\taskkill.exe /f /im reinforcement_dissertation.exe
+mlagents-learn config/moveToGoal7-4-final-v2.yaml --run-id=final_large_40rb_timed2sec_obvs6_final_with_prev --env=Build\Windows_Training_Timed2Sec\reinforcement_dissertation.exe --width=640 --height=640 --quality-level=0 --initialize-from=final_large_40rb_obvs6_final_v14
+C:\Windows\System32\taskkill.exe /f /im reinforcement_dissertation.exe 
+
+FINAL TIMED RANDOM START
+mlagents-learn config/moveToGoal7-4-final-v2.yaml --run-id=final_large_40rb_timed5sec_rndstart_v2 --env=Build\Windows_Training_Timed5Sec_Random_Start\reinforcement_dissertation.exe --width=640 --height=640 --quality-level=0
+C:\Windows\System32\taskkill.exe /f /im reinforcement_dissertation.exe
+mlagents-learn config/moveToGoal7-4-final-v2.yaml --run-id=final_large_40rb_timed5sec_rndstart_with_prev_v2 --env=Build\Windows_Training_Timed5Sec_Random_Start\reinforcement_dissertation.exe --width=640 --height=640 --quality-level=0 --initialize-from=final_large_40rb_obvs6_final_v14
+C:\Windows\System32\taskkill.exe /f /im reinforcement_dissertation.exe
+
+FINAL TIMED 2-10 SECONDS
+mlagents-learn config/moveToGoal7-4-final-v2.yaml --run-id=final_large_40rb_timed2-10sec --env=Build\Windows_Training_Timed2-10Sec\reinforcement_dissertation.exe --width=640 --height=640 --quality-level=0
+C:\Windows\System32\taskkill.exe /f /im reinforcement_dissertation.exe
+mlagents-learn config/moveToGoal7-4-final-v2.yaml --run-id=final_large_40rb_timed2-10sec_with_prev --env=Build\Windows_Training_Timed2-10Sec\reinforcement_dissertation.exe --width=640 --height=640 --quality-level=0 --initialize-from=final_large_40rb_obvs6_final_v14
+C:\Windows\System32\taskkill.exe /f /im reinforcement_dissertation.exe
+
+
+mlagents-learn config/moveToGoal7-4-final-10m.yaml --run-id=final_large_40rb_timed5sec_obvs6_final_10m --env=Build\Windows_Training_Timed5Sec\reinforcement_dissertation.exe --width=640 --height=640 --quality-level=0
+C:\Windows\System32\taskkill.exe /f /im reinforcement_dissertation.exe
+mlagents-learn config/moveToGoal7-4-final-v2.yaml --run-id=final_large_40rb_timed5sec_obvs6_final_with_prev2 --env=Build\Windows_Training_Timed5Sec\reinforcement_dissertation.exe --width=640 --height=640 --quality-level=0 --initialize-from=final_large_40rb_timed5sec_obvs6_final_with_prev
+C:\Windows\System32\taskkill.exe /f /im reinforcement_dissertation.exe
+
+mlagents-learn config/moveToGoal7-4-final-v2.yaml --run-id=final_large_40rb_timed10sec_obvs6_final --env=Build\Windows_Training_Timed10Sec\reinforcement_dissertation.exe --width=640 --height=640 --quality-level=0
+C:\Windows\System32\taskkill.exe /f /im reinforcement_dissertation.exe
+mlagents-learn config/moveToGoal7-4-final-v2.yaml --run-id=final_large_40rb_timed10sec_obvs6_final_with_prev --env=Build\Windows_Training_Timed10Sec\reinforcement_dissertation.exe --width=640 --height=640 --quality-level=0 --initialize-from=final_large_40rb_obvs6_final_v14
+C:\Windows\System32\taskkill.exe /f /im reinforcement_dissertation.exe
+mlagents-learn config/moveToGoal7-4-final-v2.yaml --run-id=final_large_40rb_timed5sec_obvs6_final_with_prev10sec --env=Build\Windows_Training_Timed5Sec\reinforcement_dissertation.exe --width=640 --height=640 --quality-level=0 --initialize-from=final_large_40rb_timed10sec_obvs6_final
+C:\Windows\System32\taskkill.exe /f /im reinforcement_dissertation.exe
+
+
+
+mlagents-learn config/moveToGoal7-4-final-v2.yaml --run-id=final_large_40rb_timed2-10sec --env=Build\Windows_Training_Timed2-10Sec\reinforcement_dissertation.exe --width=640 --height=640 --quality-level=0
+C:\Windows\System32\taskkill.exe /f /im reinforcement_dissertation.exe
+mlagents-learn config/moveToGoal7-4-final-v2.yaml --run-id=final_large_40rb_timed5sec_rndstart_with_prev --env=Build\Windows_Training_Timed5Sec_Random_Start\reinforcement_dissertation.exe --width=640 --height=640 --quality-level=0 --initialize-from=final_large_40rb_obvs6_final_v14
+C:\Windows\System32\taskkill.exe /f /im reinforcement_dissertation.exe
