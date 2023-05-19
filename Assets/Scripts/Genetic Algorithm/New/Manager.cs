@@ -3,7 +3,7 @@ using UnityEngine.UIElements;
 using UnityEngine;
 using System.Collections;
 
-public class Manager : MonoBehaviour
+public class Manager : MonoBehaviour 
 {
 
     public float timeframe;
@@ -48,6 +48,11 @@ public class Manager : MonoBehaviour
         Time.timeScale = Gamespeed;//sets gamespeed, which will increase to speed up training
         if (cars != null && cars.Count == populationSize)
         {
+            if (cars[0].randomiseGoalPosition)
+            {
+                cars[0].RandomiseTargetPos();
+            }
+            
             for (int i = 0; i < cars.Count; i++)
             {
                 GameObject.Destroy(cars[i].gameObject);//if there are Prefabs in the scene this will get rid of them

@@ -14,7 +14,7 @@ public class CarController : MonoBehaviour
     [SerializeField, Range(0, 100)] public int agentNo = 0;
     [SerializeField] private GameObject breadcrumbPrefab;
     [SerializeField] private bool leaveBreadcrumbs = true;
-    [SerializeField] private bool randomiseGoalPosition = true;
+    [SerializeField] public bool randomiseGoalPosition = true;
     [SerializeField] private bool isRandomGrid = true;
 
     private Vector3 startPosition, startRotation;
@@ -313,12 +313,7 @@ public class CarController : MonoBehaviour
         for (int i = 0; i < 9; i++) {
             Ray r = new Ray(transform.position, raycasts[i]);
             RaycastHit hit;
-            if (Physics.Raycast(r, out hit, 50 , 6)) // Wall
-            {
-                sensors[i] = hit.distance;
-                Debug.DrawLine(r.origin, hit.point, Color.red);
-            }
-            else if (Physics.Raycast(r, out hit, 50, 7)) // Goal
+            if (Physics.Raycast(r, out hit, 50 , LayerMask.GetMask("Wall", "Goal")))
             {
                 sensors[i] = hit.distance;
                 Debug.DrawLine(r.origin, hit.point, Color.red);
@@ -382,7 +377,7 @@ public class CarController : MonoBehaviour
             network.fitness = (float)(20 + 100 / Math.Pow(totalDistanceTravelled, 2));
         } else
         {
-            network.fitness = (float)(10 / Math.Pow((1 / (1 + distanceToTarget)), 2));
+            network.fitness = (float)(100 / (1 + Math.Pow(distanceToTarget, 2))) - numOfCollisions;
         }
         Debug.Log(network.fitness);
     }

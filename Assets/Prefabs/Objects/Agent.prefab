@@ -242,7 +242,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentNo: 0
   breadcrumbPrefab: {fileID: 7709464149880990432, guid: 0abfe58ac38583a479a156ead2787c66, type: 3}
-  leaveBreadcrumbs: 0
+  leaveBreadcrumbs: 1
   randomiseGoalPosition: 1
   isRandomGrid: 1
   a: 0
