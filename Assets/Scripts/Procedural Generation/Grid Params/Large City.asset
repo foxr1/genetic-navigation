@@ -23,7 +23,7 @@ MonoBehaviour:
   maxRandomHeightOffset: 1
   maxRandomWidthOffset: 1
   maxRandomDepthOffset: 1
-  randomSeed: 1
+  randomSeed: 2
   ShapeType: 0
   makeShapesStatic: 1
   shouldGenerateRigidBodies: 0

@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using System;
 using System.IO;
 using System.Diagnostics;
+using Grpc.Core;
 
 public class NeuralNetwork : IComparable<NeuralNetwork>
 {
@@ -12,6 +13,10 @@ public class NeuralNetwork : IComparable<NeuralNetwork>
     private int[] activations;//layers
 
     public float fitness = 0;//fitness
+
+    //backprop
+    public float learningRate = 0.01f;//learning rate
+    public float cost = 0;
 
     public NeuralNetwork(int[] layers)
     {
@@ -88,21 +93,21 @@ public class NeuralNetwork : IComparable<NeuralNetwork>
                 {
                     value += weights[i - 1][j][k] * neurons[i - 1][k];
                 }
-                //neurons[i][j] = j;
-                neurons[i][j] = sigmoidDer(value + biases[i][j]);
+                neurons[i][j] = activate(value + biases[i][j]);
             }
         }
         return neurons[neurons.Length - 1];
     }
 
+    public float sigmoid(float x)
+    {
+        float k = (float)Math.Exp(x);
+        return k / (1.0f + k);
+    }
+
     public float activate(float value)
     {
         return (float)Math.Tanh(value);
-    }
-
-    public float sigmoidDer(float x)
-    {
-        return x * (1 - x);
     }
 
     public void Mutate(int chance, float val)//used as a simple mutation function for any genetic implementations.
@@ -111,7 +116,10 @@ public class NeuralNetwork : IComparable<NeuralNetwork>
         {
             for (int j = 0; j < biases[i].Length; j++)
             {
-                biases[i][j] = (UnityEngine.Random.Range(0f, chance) <= 5) ? biases[i][j] += UnityEngine.Random.Range(-val, val) : biases[i][j];
+                biases[i][j] = (UnityEngine.Random.Range(0f, chance) <= 5) ? 
+                    biases[i][j] += UnityEngine.Random.Range(-val, val) 
+                    : 
+                    biases[i][j];
             }
         }
 
@@ -121,7 +129,10 @@ public class NeuralNetwork : IComparable<NeuralNetwork>
             {
                 for (int k = 0; k < weights[i][j].Length; k++)
                 {
-                    weights[i][j][k] = (UnityEngine.Random.Range(0f, chance) <= 5) ? weights[i][j][k] += UnityEngine.Random.Range(-val, val) : weights[i][j][k];
+                    weights[i][j][k] = (UnityEngine.Random.Range(0f, chance) <= 5) ? 
+                        weights[i][j][k] += UnityEngine.Random.Range(-val, val) 
+                        : 
+                        weights[i][j][k];
                 }
             }
         }
@@ -140,6 +151,28 @@ public class NeuralNetwork : IComparable<NeuralNetwork>
     }
 
     public NeuralNetwork copy(NeuralNetwork nn) //For creatinga deep copy, to ensure arrays are serialzed.
+    {
+        for (int i = 0; i < biases.Length; i++)
+        {
+            for (int j = 0; j < biases[i].Length; j++)
+            {
+                nn.biases[i][j] = biases[i][j];
+            }
+        }
+        for (int i = 0; i < weights.Length; i++)
+        {
+            for (int j = 0; j < weights[i].Length; j++)
+            {
+                for (int k = 0; k < weights[i][j].Length; k++)
+                {
+                    nn.weights[i][j][k] = weights[i][j][k];
+                }
+            }
+        }
+        return nn;
+    }
+
+    public NeuralNetwork HyperMutation(NeuralNetwork nn)
     {
         for (int i = 0; i < biases.Length; i++)
         {
@@ -189,7 +222,7 @@ public class NeuralNetwork : IComparable<NeuralNetwork>
                 {
                     for (int k = 0; k < weights[i][j].Length; k++)
                     {
-                        weights[i][j][k] = float.Parse(ListLines[index]); ;
+                        weights[i][j][k] = float.Parse(ListLines[index]);
                         index++;
                     }
                 }
@@ -197,7 +230,7 @@ public class NeuralNetwork : IComparable<NeuralNetwork>
         }
     }
 
-    public void Save(string path)//this is used for saving the biases and weights within the network to a file.
+    public void Save(string path, int numberOfGoals)//this is used for saving the biases and weights within the network to a file.
     {
         File.Create(path).Close();
         StreamWriter writer = new StreamWriter(path, true);
@@ -220,6 +253,8 @@ public class NeuralNetwork : IComparable<NeuralNetwork>
                 }
             }
         }
+        writer.WriteLine(fitness);
+        writer.WriteLine(numberOfGoals);
         writer.Close();
     }
 }

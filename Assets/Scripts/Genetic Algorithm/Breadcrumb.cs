@@ -23,13 +23,13 @@ public class Breadcrumb : MonoBehaviour
 
     private IEnumerator RemoveBreadcrumb()
     {
-        yield return new WaitForSeconds(delay * Time.timeScale);
+        yield return new WaitForSeconds(delay);
         Destroy(gameObject);
     }
 
     private IEnumerator IsNew()
     {
-        yield return new WaitForSeconds(1 * Time.timeScale);
+        yield return new WaitForSeconds(1);
         newBreadcrumb = false;
     }
 }

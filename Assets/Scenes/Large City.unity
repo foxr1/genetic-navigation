@@ -516,10 +516,10 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.3
-  far clip plane: 879
+  far clip plane: 852.7
   field of view: 60
   orthographic: 1
-  orthographic size: 242.5
+  orthographic size: 254
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -658,6 +658,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2007574300}
   - component: {fileID: 2007574301}
+  - component: {fileID: 2007574299}
   m_Layer: 0
   m_Name: Manager
   m_TagString: Manager
@@ -665,6 +666,28 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &2007574299
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2007574298}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4cb43842ccf9e2e4293f553db7d2b8a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  doGridSearch: 0
+  timeInMinutes: 5
+  mutationChances:
+  - 0.001
+  - 0.01
+  - 0.1
+  mutationStrengths:
+  - 0.25
+  - 0.5
+  - 0.75
 --- !u!4 &2007574300
 Transform:
   m_ObjectHideFlags: 0
@@ -691,14 +714,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bae6372e9752a144b82c861029196f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeframe: 20
-  populationSize: 12
+  setText: {fileID: 1672298159}
+  GameSpeed: 2
   prefab: {fileID: 7423233444246318579, guid: 8c0da3489931e014f8701df3d3f851b6, type: 3}
-  spawnRate: 0.2
-  layers: 120000000500000005000000
-  MutationChance: 0.05
+  randomiseGridNumber: 25
+  numberOfGoals: 0
+  numberOfCollisions: 0
+  populationSize: 50
+  timeframe: 50
+  spawnRate: 0.01
+  layers: 0b0000000a00000005000000
+  MutationChance: 0.25
   MutationStrength: 0.5
-  Gamespeed: 2
+  PercentageOfMutatedAgents: 0.5
+  UseRandomAgents: 1
+  PercentageOfRandomAgents: 0.15
+  hyperMutation: 1
+  CheckMutation: 5
+  CheckMutationCounter: 0
+  eliteBased: 1
+  timeSinceStart: 0
 --- !u!114 &142226552721306530
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -774,7 +809,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1209183719550709668}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 10.25, z: 0}
+  m_LocalPosition: {x: -6.7, y: 10.25, z: 66.1}
   m_LocalScale: {x: 20, y: 20, z: 20}
   m_Children:
   - {fileID: 9171646012295643275}
@@ -836,7 +871,7 @@ GameObject:
   - component: {fileID: 6890966354947069301}
   - component: {fileID: 4287058094403162560}
   - component: {fileID: 3482574516406062332}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Goal
   m_TagString: Goal
   m_Icon: {fileID: 0}
@@ -999,7 +1034,7 @@ GameObject:
   - component: {fileID: 9085234635918906284}
   - component: {fileID: 9085234635918906275}
   - component: {fileID: 9085234635918906274}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wall (1)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -1170,7 +1205,7 @@ GameObject:
   - component: {fileID: 9085234635952399495}
   - component: {fileID: 9085234635952399494}
   - component: {fileID: 9085234635952399493}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wall
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -1189,7 +1224,7 @@ GameObject:
   - component: {fileID: 9085234636151393870}
   - component: {fileID: 9085234636151393869}
   - component: {fileID: 9085234636151393868}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wall (3)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -1284,7 +1319,7 @@ GameObject:
   - component: {fileID: 9085234636184418351}
   - component: {fileID: 9085234636184418350}
   - component: {fileID: 9085234636184418349}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wall (2)
   m_TagString: Wall
   m_Icon: {fileID: 0}

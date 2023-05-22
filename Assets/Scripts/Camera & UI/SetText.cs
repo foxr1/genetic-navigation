@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class SetText : MonoBehaviour
 {
-    public void SetInfoText(string generation, string genome, string fitness, double timeElapsed)
+    public void SetInfoText(string generation, string fitness, double timeElapsed)
     {
         // https://stackoverflow.com/questions/463642/how-can-i-convert-seconds-into-hourminutessecondsmilliseconds-time
         TimeSpan time = TimeSpan.FromSeconds(timeElapsed);
@@ -15,8 +15,7 @@ public class SetText : MonoBehaviour
         gameObject.GetComponent<TextMeshProUGUI>().text = $"" +
             $"<b><size=150%>Genetic Algorithm Demonstration</size></b>\r\n\r\n" +
             $"<b>Current Generation:</b> {generation}\r\n" +
-            $"<b>Current Genome:</b> {genome}\r\n" +
-            $"<b>Current Fitness:</b> {fitness}\r\n" +
+            $"<b>Last Max Fitness:</b> {fitness}\r\n" +
             $"<b>Time Elapsed:</b> {str}\r\n";
     }
 }

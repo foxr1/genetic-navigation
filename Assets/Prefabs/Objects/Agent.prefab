@@ -249,13 +249,7 @@ MonoBehaviour:
   t: 0
   timeSinceStart: 0
   overallFitness: 0
-  distanceMultipler: -0.15
-  targetMultiplier: 1
-  collisionMultiplier: -0.1
-  sensorMultiplier: 0.1
-  NEURONS: 10
   agentGhost: {fileID: 8752617856656281794, guid: f09969775eee97a48878cb57dcd4c026, type: 3}
-  setText: {fileID: 0}
 --- !u!1 &9175170091144190912
 GameObject:
   m_ObjectHideFlags: 0
