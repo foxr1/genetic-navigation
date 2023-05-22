@@ -12,15 +12,17 @@ public class Manager : MonoBehaviour
 
     [Header("Environment Settings")]
     [SerializeField][Range(0.1f, 20f)] public float GameSpeed = 1f;
-    public GameObject prefab;// Holds agent prefab
+    [SerializeField] public GameObject prefab;// Holds agent prefab
     private int randomSeedNo = 0; // Seed for grid
     [SerializeField] private int randomiseGridNumber = 10; // Randomise grid every x times
     private int randomGridCounter = 0;
     public int numberOfGoals = 0; // Number of goals reached in one generation
-    public int numberOfCollisions = 0;
+    public int numberOfCollisions = 0; // Number of collisions in one generation
+    public int numberOfCellsVisited = 0; // Number of cells visited
     [SerializeField] public int populationSize;//creates population size
-    public float timeframe; // How long each generation lasts in seconds
-    public float spawnRate = 0.5f; // How quickly agents spawn on new generation
+    [SerializeField] public float timeframe; // How long each generation lasts in seconds
+    [SerializeField] public float spawnRate = 0.5f; // How quickly agents spawn on new generation
+    [SerializeField] private GameObject cells;
 
     [Header("Network Settings")]
     [SerializeField] public int[] layers = new int[3] { 5, 3, 2 };//initializing network to the right size
@@ -92,6 +94,7 @@ public class Manager : MonoBehaviour
         if (cars != null)
         {
             cars[0].RemoveAllBreadcrumbs();
+            NumberOfCellsVisited(randomGridCounter >= randomiseGridNumber);
 
             if (cars[0].isRandomGrid && randomGridCounter >= randomiseGridNumber)
             {
@@ -135,6 +138,22 @@ public class Manager : MonoBehaviour
         }
     }
 
+    public void NumberOfCellsVisited(bool reset)
+    {
+        foreach (Cell cell in cells.GetComponentsInChildren<Cell>())
+        {
+            if (cell.hasVisited) 
+            {
+                numberOfCellsVisited++;
+                if (reset)
+                {
+                    cell.hasVisited = false;
+                    cell.timesVisited = 0;
+                }
+            }
+        }
+    }
+
     public void SortNetworks() 
     {   
         networks.Sort();
@@ -157,24 +176,52 @@ public class Manager : MonoBehaviour
                     if (previousMutationChance < MutationChance)
                     {
                         previousMutationChance = MutationChance;
-                        MutationChance -= 0.05f;
+                        if (MutationChance <= 0.2f)
+                        {
+                            MutationChance -= 0.0025f;
+                        } 
+                        else
+                        {
+                            MutationChance -= 0.05f;
+                        }
                     }
                     else if (previousMutationChance > MutationChance)
                     {
                         previousMutationChance = MutationChance;
-                        MutationChance += 0.05f;
+                        if (MutationChance >= 0.8f)
+                        {
+                            MutationChance += 0.0025f;
+                        }
+                        else
+                        {
+                            MutationChance += 0.05f;
+                        }
                     }
 
                     // Mutation Strength
                     if (previousMutationStrength < MutationStrength)
                     {
                         previousMutationStrength = MutationStrength;
-                        MutationStrength -= 0.05f;
+                        if (MutationStrength <= 0.2f)
+                        {
+                            MutationStrength -= 0.005f;
+                        }
+                        else
+                        {
+                            MutationStrength -= 0.05f;
+                        }
                     }
                     else if (previousMutationStrength > MutationStrength)
                     {
                         previousMutationStrength = MutationStrength;
-                        MutationStrength += 0.05f;
+                        if (MutationStrength >= 0.8f)
+                        {
+                            MutationStrength += 0.005f;
+                        }
+                        else
+                        {
+                            MutationStrength += 0.05f;
+                        }
                     }
                 }
                 else if (avgFitness > previousAverageFitness)
@@ -183,24 +230,52 @@ public class Manager : MonoBehaviour
                     if (previousMutationChance < MutationChance)
                     {
                         previousMutationChance = MutationChance;
-                        MutationChance += 0.05f;
+                        if (MutationChance >= 0.8f)
+                        {
+                            MutationChance += 0.0025f;
+                        }
+                        else
+                        {
+                            MutationChance += 0.05f;
+                        }
                     }
                     else if (previousMutationChance > MutationChance)
                     {
                         previousMutationChance = MutationChance;
-                        MutationChance -= 0.05f; 
+                        if (MutationChance <= 0.2f)
+                        {
+                            MutationChance -= 0.0025f;
+                        }
+                        else
+                        {
+                            MutationChance -= 0.05f;
+                        }
                     }
 
                     // Mutation Strength
                     if (previousMutationStrength < MutationStrength)
                     {
                         previousMutationStrength = MutationStrength;
-                        MutationStrength += 0.05f;
+                        if (MutationStrength >= 0.8f)
+                        {
+                            MutationStrength += 0.005f;
+                        }
+                        else
+                        {
+                            MutationStrength += 0.05f;
+                        }
                     }
                     else if (previousMutationStrength > MutationStrength)
                     {
                         previousMutationStrength = MutationStrength;
-                        MutationStrength -= 0.05f;
+                        if (MutationStrength <= 0.2f)
+                        {
+                            MutationStrength -= 0.005f;
+                        }
+                        else
+                        {
+                            MutationStrength -= 0.05f;
+                        }
                     }
                 }
             }

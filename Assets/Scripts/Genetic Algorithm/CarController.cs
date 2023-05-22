@@ -20,9 +20,6 @@ public class CarController : MonoBehaviour
     private Vector3 startPosition, startRotation;
     public NeuralNetwork network = null;
 
-    [Range(-1f,1f)]
-    public float a,t;
-
     public float timeSinceStart = 0f; 
 
     [Header("Fitness")]
@@ -91,15 +88,15 @@ public class CarController : MonoBehaviour
             numOfCollisions += 1;
             Stop();
         }
-        if (other.CompareTag("Breadcrumb"))
-        {
-            // If breadcrumb has been active for more than 1 second, then penalise for colliding with it
-            if (other.GetComponent<Breadcrumb>().newBreadcrumb == false)
-            {
-                numOfCollisions += 1;
-                geneticManager.numberOfCollisions++;
-            }
-        }
+        //if (other.CompareTag("Breadcrumb"))
+        //{
+        //    // If breadcrumb has been active for more than 1 second, then penalise for colliding with it
+        //    if (other.GetComponent<Breadcrumb>().newBreadcrumb == false)
+        //    {
+        //        numOfCollisions += 1;
+        //        geneticManager.numberOfCollisions++;
+        //    }
+        //}
     }
 
     private void Stop()
@@ -140,17 +137,18 @@ public class CarController : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        //if (!collided)
-        //{
-        //    if (other.CompareTag("Breadcrumb"))
-        //    {
-        //        // If breadcrumb has been active for more than 1 second, then penalise for colliding with it
-        //        if (other.GetComponent<Breadcrumb>().newBreadcrumb == false)
-        //        {
-        //            numOfCollisions++;
-        //        }
-        //    }
-        //}
+        if (!collided)
+        {
+            if (other.CompareTag("Breadcrumb"))
+            {
+                // If breadcrumb has been active for more than 1 second, then penalise for colliding with it
+                if (other.GetComponent<Breadcrumb>().newBreadcrumb == false)
+                {
+                    numOfCollisions += 1;
+                    geneticManager.numberOfCollisions++;
+                }
+            }
+        }
     }
 
     private void FixedUpdate() 

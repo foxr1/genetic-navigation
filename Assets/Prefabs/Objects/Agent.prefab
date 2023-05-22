@@ -249,7 +249,6 @@ MonoBehaviour:
   t: 0
   timeSinceStart: 0
   overallFitness: 0
-  agentGhost: {fileID: 8752617856656281794, guid: f09969775eee97a48878cb57dcd4c026, type: 3}
 --- !u!1 &9175170091144190912
 GameObject:
   m_ObjectHideFlags: 0
