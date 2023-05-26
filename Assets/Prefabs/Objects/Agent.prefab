@@ -245,10 +245,14 @@ MonoBehaviour:
   leaveBreadcrumbs: 1
   randomiseGoalPosition: 1
   isRandomGrid: 1
-  a: 0
-  t: 0
+  fitness: 0
   timeSinceStart: 0
   overallFitness: 0
+  numOfCollisions: 0
+  active: 1
+  reset: 0
+  velocity: {x: 0, y: 0, z: 0}
+  resetTimer: 0
 --- !u!1 &9175170091144190912
 GameObject:
   m_ObjectHideFlags: 0

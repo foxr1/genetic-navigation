@@ -6,7 +6,9 @@ public class Breadcrumb : MonoBehaviour
 {
     [Header("Time Delay Options")]
     [SerializeField] private bool timeDelay;
-    [SerializeField] private float delay;
+    [SerializeField, Tooltip("How long a delay before removing the breadcrumb")] private float removeDelay = 10f;
+    [SerializeField, Tooltip("How long a delay there should be before the agent receives a penalty for colliding")]
+    private float penaltyDelay = 0.5f;
 
     public bool newBreadcrumb = true;
 
@@ -23,13 +25,13 @@ public class Breadcrumb : MonoBehaviour
 
     private IEnumerator RemoveBreadcrumb()
     {
-        yield return new WaitForSeconds(delay);
+        yield return new WaitForSeconds(removeDelay);
         Destroy(gameObject);
     }
 
     private IEnumerator IsNew()
     {
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(penaltyDelay);
         newBreadcrumb = false;
     }
 }

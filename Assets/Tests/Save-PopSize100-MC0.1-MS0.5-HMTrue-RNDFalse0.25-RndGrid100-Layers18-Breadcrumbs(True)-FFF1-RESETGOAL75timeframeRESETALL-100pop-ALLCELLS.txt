@@ -1,0 +1,10 @@
+Distance covered: 101809.4
+No. of collisions: 7844035
+Cells visited: 93
+Cells visited multiple times: 93
+Max times one cell was visited: 161348
+No. of goals reached in total: 12
+Average fitness: 0.250993
+Maximum fitness: 10512.32
+No. of generations: 801
+Time elapsed: 3034.188

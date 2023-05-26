@@ -134,6 +134,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cell (66)
       objectReference: {fileID: 0}
+    - target: {fileID: 3448272501365828897, guid: 187783913f7fc5a40835d7669875840a, type: 3}
+      propertyPath: cellManager
+      value: 
+      objectReference: {fileID: 112570290}
     - target: {fileID: 8315182419893091978, guid: 187783913f7fc5a40835d7669875840a, type: 3}
       propertyPath: m_RootOrder
       value: 66
@@ -196,6 +200,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cell (84)
       objectReference: {fileID: 0}
+    - target: {fileID: 3448272501365828897, guid: 187783913f7fc5a40835d7669875840a, type: 3}
+      propertyPath: cellManager
+      value: 
+      objectReference: {fileID: 112570290}
     - target: {fileID: 8315182419893091978, guid: 187783913f7fc5a40835d7669875840a, type: 3}
       propertyPath: m_RootOrder
       value: 84
@@ -258,6 +266,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cell (30)
       objectReference: {fileID: 0}
+    - target: {fileID: 3448272501365828897, guid: 187783913f7fc5a40835d7669875840a, type: 3}
+      propertyPath: cellManager
+      value: 
+      objectReference: {fileID: 112570290}
     - target: {fileID: 8315182419893091978, guid: 187783913f7fc5a40835d7669875840a, type: 3}
       propertyPath: m_RootOrder
       value: 30
@@ -320,6 +332,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cell (69)
       objectReference: {fileID: 0}
+    - target: {fileID: 3448272501365828897, guid: 187783913f7fc5a40835d7669875840a, type: 3}
+      propertyPath: cellManager
+      value: 
+      objectReference: {fileID: 112570290}
     - target: {fileID: 8315182419893091978, guid: 187783913f7fc5a40835d7669875840a, type: 3}
       propertyPath: m_RootOrder
       value: 69
@@ -382,6 +398,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cell (52)
       objectReference: {fileID: 0}
+    - target: {fileID: 3448272501365828897, guid: 187783913f7fc5a40835d7669875840a, type: 3}
+      propertyPath: cellManager
+      value: 
+      objectReference: {fileID: 112570290}
     - target: {fileID: 8315182419893091978, guid: 187783913f7fc5a40835d7669875840a, type: 3}
       propertyPath: m_RootOrder
       value: 52
@@ -444,6 +464,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cell (65)
       objectReference: {fileID: 0}
+    - target: {fileID: 3448272501365828897, guid: 187783913f7fc5a40835d7669875840a, type: 3}
+      propertyPath: cellManager
+      value: 
+      objectReference: {fileID: 112570290}
     - target: {fileID: 8315182419893091978, guid: 187783913f7fc5a40835d7669875840a, type: 3}
       propertyPath: m_RootOrder
       value: 65
@@ -506,6 +530,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cell (58)
       objectReference: {fileID: 0}
+    - target: {fileID: 3448272501365828897, guid: 187783913f7fc5a40835d7669875840a, type: 3}
+      propertyPath: cellManager
+      value: 
+      objectReference: {fileID: 112570290}
     - target: {fileID: 8315182419893091978, guid: 187783913f7fc5a40835d7669875840a, type: 3}
       propertyPath: m_RootOrder
       value: 58
@@ -566,6 +594,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 112570289}
+  - component: {fileID: 112570290}
   m_Layer: 0
   m_Name: Cells
   m_TagString: Untagged
@@ -687,6 +716,19 @@ Transform:
   m_Father: {fileID: 9085234636888477178}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &112570290
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 112570288}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8d03f67416cc19469d242aa9c47e73f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  numberOfCellsVisited: 0
 --- !u!1 &127573732
 GameObject:
   m_ObjectHideFlags: 0
@@ -798,6 +840,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cell (73)
       objectReference: {fileID: 0}
+    - target: {fileID: 3448272501365828897, guid: 187783913f7fc5a40835d7669875840a, type: 3}
+      propertyPath: cellManager
+      value: 
+      objectReference: {fileID: 112570290}
     - target: {fileID: 8315182419893091978, guid: 187783913f7fc5a40835d7669875840a, type: 3}
       propertyPath: m_RootOrder
       value: 73
@@ -860,6 +906,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cell (28)
       objectReference: {fileID: 0}
+    - target: {fileID: 3448272501365828897, guid: 187783913f7fc5a40835d7669875840a, type: 3}
+      propertyPath: cellManager
+      value: 
+      objectReference: {fileID: 112570290}
     - target: {fileID: 8315182419893091978, guid: 187783913f7fc5a40835d7669875840a, type: 3}
       propertyPath: m_RootOrder
       value: 28
@@ -922,6 +972,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cell (46)
       objectReference: {fileID: 0}
+    - target: {fileID: 3448272501365828897, guid: 187783913f7fc5a40835d7669875840a, type: 3}
+      propertyPath: cellManager
+      value: 
+      objectReference: {fileID: 112570290}
     - target: {fileID: 8315182419893091978, guid: 187783913f7fc5a40835d7669875840a, type: 3}
       propertyPath: m_RootOrder
       value: 46
@@ -984,6 +1038,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cell (64)
       objectReference: {fileID: 0}
+    - target: {fileID: 3448272501365828897, guid: 187783913f7fc5a40835d7669875840a, type: 3}
+      propertyPath: cellManager
+      value: 
+      objectReference: {fileID: 112570290}
     - target: {fileID: 8315182419893091978, guid: 187783913f7fc5a40835d7669875840a, type: 3}
       propertyPath: m_RootOrder
       value: 64
@@ -1046,6 +1104,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cell (32)
       objectReference: {fileID: 0}
+    - target: {fileID: 3448272501365828897, guid: 187783913f7fc5a40835d7669875840a, type: 3}
+      propertyPath: cellManager
+      value: 
+      objectReference: {fileID: 112570290}
     - target: {fileID: 8315182419893091978, guid: 187783913f7fc5a40835d7669875840a, type: 3}
       propertyPath: m_RootOrder
       value: 32
@@ -1108,6 +1170,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cell (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 3448272501365828897, guid: 187783913f7fc5a40835d7669875840a, type: 3}
+      propertyPath: cellManager
+      value: 
+      objectReference: {fileID: 112570290}
     - target: {fileID: 8315182419893091978, guid: 187783913f7fc5a40835d7669875840a, type: 3}
       propertyPath: m_RootOrder
       value: 17
@@ -1170,6 +1236,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cell (25)
       objectReference: {fileID: 0}
+    - target: {fileID: 3448272501365828897, guid: 187783913f7fc5a40835d7669875840a, type: 3}
+      propertyPath: cellManager
+      value: 
+      objectReference: {fileID: 112570290}
     - target: {fileID: 8315182419893091978, guid: 187783913f7fc5a40835d7669875840a, type: 3}
       propertyPath: m_RootOrder
       value: 25
@@ -1232,6 +1302,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cell (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 3448272501365828897, guid: 187783913f7fc5a40835d7669875840a, type: 3}
+      propertyPath: cellManager
+      value: 
+      objectReference: {fileID: 112570290}
     - target: {fileID: 8315182419893091978, guid: 187783913f7fc5a40835d7669875840a, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -1294,6 +1368,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cell (81)
       objectReference: {fileID: 0}
+    - target: {fileID: 3448272501365828897, guid: 187783913f7fc5a40835d7669875840a, type: 3}
+      propertyPath: cellManager
+      value: 
+      objectReference: {fileID: 112570290}
     - target: {fileID: 8315182419893091978, guid: 187783913f7fc5a40835d7669875840a, type: 3}
       propertyPath: m_RootOrder
       value: 81
@@ -1356,6 +1434,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cell (29)
       objectReference: {fileID: 0}
+    - target: {fileID: 3448272501365828897, guid: 187783913f7fc5a40835d7669875840a, type: 3}
+      propertyPath: cellManager
+      value: 
+      objectReference: {fileID: 112570290}
     - target: {fileID: 8315182419893091978, guid: 187783913f7fc5a40835d7669875840a, type: 3}
       propertyPath: m_RootOrder
       value: 29
@@ -1418,6 +1500,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cell (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3448272501365828897, guid: 187783913f7fc5a40835d7669875840a, type: 3}
+      propertyPath: cellManager
+      value: 
+      objectReference: {fileID: 112570290}
     - target: {fileID: 8315182419893091978, guid: 187783913f7fc5a40835d7669875840a, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -1480,6 +1566,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cell (59)
       objectReference: {fileID: 0}
+    - target: {fileID: 3448272501365828897, guid: 187783913f7fc5a40835d7669875840a, type: 3}
+      propertyPath: cellManager
+      value: 
+      objectReference: {fileID: 112570290}
     - target: {fileID: 8315182419893091978, guid: 187783913f7fc5a40835d7669875840a, type: 3}
       propertyPath: m_RootOrder
       value: 59
@@ -1542,6 +1632,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cell (38)
       objectReference: {fileID: 0}
+    - target: {fileID: 3448272501365828897, guid: 187783913f7fc5a40835d7669875840a, type: 3}
+      propertyPath: cellManager
+      value: 
+      objectReference: {fileID: 112570290}
     - target: {fileID: 8315182419893091978, guid: 187783913f7fc5a40835d7669875840a, type: 3}
       propertyPath: m_RootOrder
       value: 38
@@ -1604,6 +1698,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cell (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 3448272501365828897, guid: 187783913f7fc5a40835d7669875840a, type: 3}
+      propertyPath: cellManager
+      value: 
+      objectReference: {fileID: 112570290}
     - target: {fileID: 8315182419893091978, guid: 187783913f7fc5a40835d7669875840a, type: 3}
       propertyPath: m_RootOrder
       value: 16
@@ -1666,6 +1764,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cell (92)
       objectReference: {fileID: 0}
+    - target: {fileID: 3448272501365828897, guid: 187783913f7fc5a40835d7669875840a, type: 3}
+      propertyPath: cellManager
+      value: 
+      objectReference: {fileID: 112570290}
     - target: {fileID: 8315182419893091978, guid: 187783913f7fc5a40835d7669875840a, type: 3}
       propertyPath: m_RootOrder
       value: 92
@@ -1728,6 +1830,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cell (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 3448272501365828897, guid: 187783913f7fc5a40835d7669875840a, type: 3}
+      propertyPath: cellManager
+      value: 
+      objectReference: {fileID: 112570290}
     - target: {fileID: 8315182419893091978, guid: 187783913f7fc5a40835d7669875840a, type: 3}
       propertyPath: m_RootOrder
       value: 18
@@ -1790,6 +1896,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cell (61)
       objectReference: {fileID: 0}
+    - target: {fileID: 3448272501365828897, guid: 187783913f7fc5a40835d7669875840a, type: 3}
+      propertyPath: cellManager
+      value: 
+      objectReference: {fileID: 112570290}
     - target: {fileID: 8315182419893091978, guid: 187783913f7fc5a40835d7669875840a, type: 3}
       propertyPath: m_RootOrder
       value: 61
@@ -1945,6 +2055,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cell (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 3448272501365828897, guid: 187783913f7fc5a40835d7669875840a, type: 3}
+      propertyPath: cellManager
+      value: 
+      objectReference: {fileID: 112570290}
     - target: {fileID: 8315182419893091978, guid: 187783913f7fc5a40835d7669875840a, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -2007,6 +2121,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cell (74)
       objectReference: {fileID: 0}
+    - target: {fileID: 3448272501365828897, guid: 187783913f7fc5a40835d7669875840a, type: 3}
+      propertyPath: cellManager
+      value: 
+      objectReference: {fileID: 112570290}
     - target: {fileID: 8315182419893091978, guid: 187783913f7fc5a40835d7669875840a, type: 3}
       propertyPath: m_RootOrder
       value: 74
@@ -2069,6 +2187,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cell (60)
       objectReference: {fileID: 0}
+    - target: {fileID: 3448272501365828897, guid: 187783913f7fc5a40835d7669875840a, type: 3}
+      propertyPath: cellManager
+      value: 
+      objectReference: {fileID: 112570290}
     - target: {fileID: 8315182419893091978, guid: 187783913f7fc5a40835d7669875840a, type: 3}
       propertyPath: m_RootOrder
       value: 60
@@ -2131,6 +2253,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cell (53)
       objectReference: {fileID: 0}
+    - target: {fileID: 3448272501365828897, guid: 187783913f7fc5a40835d7669875840a, type: 3}
+      propertyPath: cellManager
+      value: 
+      objectReference: {fileID: 112570290}
     - target: {fileID: 8315182419893091978, guid: 187783913f7fc5a40835d7669875840a, type: 3}
       propertyPath: m_RootOrder
       value: 53
@@ -2193,6 +2319,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cell (55)
       objectReference: {fileID: 0}
+    - target: {fileID: 3448272501365828897, guid: 187783913f7fc5a40835d7669875840a, type: 3}
+      propertyPath: cellManager
+      value: 
+      objectReference: {fileID: 112570290}
     - target: {fileID: 8315182419893091978, guid: 187783913f7fc5a40835d7669875840a, type: 3}
       propertyPath: m_RootOrder
       value: 55
@@ -2255,6 +2385,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cell (98)
       objectReference: {fileID: 0}
+    - target: {fileID: 3448272501365828897, guid: 187783913f7fc5a40835d7669875840a, type: 3}
+      propertyPath: cellManager
+      value: 
+      objectReference: {fileID: 112570290}
     - target: {fileID: 8315182419893091978, guid: 187783913f7fc5a40835d7669875840a, type: 3}
       propertyPath: m_RootOrder
       value: 98
@@ -2317,6 +2451,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cell (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 3448272501365828897, guid: 187783913f7fc5a40835d7669875840a, type: 3}
+      propertyPath: cellManager
+      value: 
+      objectReference: {fileID: 112570290}
     - target: {fileID: 8315182419893091978, guid: 187783913f7fc5a40835d7669875840a, type: 3}
       propertyPath: m_RootOrder
       value: 14
@@ -2379,6 +2517,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cell (88)
       objectReference: {fileID: 0}
+    - target: {fileID: 3448272501365828897, guid: 187783913f7fc5a40835d7669875840a, type: 3}
+      propertyPath: cellManager
+      value: 
+      objectReference: {fileID: 112570290}
     - target: {fileID: 8315182419893091978, guid: 187783913f7fc5a40835d7669875840a, type: 3}
       propertyPath: m_RootOrder
       value: 88
@@ -2441,6 +2583,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cell (36)
       objectReference: {fileID: 0}
+    - target: {fileID: 3448272501365828897, guid: 187783913f7fc5a40835d7669875840a, type: 3}
+      propertyPath: cellManager
+      value: 
+      objectReference: {fileID: 112570290}
     - target: {fileID: 8315182419893091978, guid: 187783913f7fc5a40835d7669875840a, type: 3}
       propertyPath: m_RootOrder
       value: 36
@@ -2503,6 +2649,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cell (79)
       objectReference: {fileID: 0}
+    - target: {fileID: 3448272501365828897, guid: 187783913f7fc5a40835d7669875840a, type: 3}
+      propertyPath: cellManager
+      value: 
+      objectReference: {fileID: 112570290}
     - target: {fileID: 8315182419893091978, guid: 187783913f7fc5a40835d7669875840a, type: 3}
       propertyPath: m_RootOrder
       value: 79
@@ -2565,6 +2715,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cell (68)
       objectReference: {fileID: 0}
+    - target: {fileID: 3448272501365828897, guid: 187783913f7fc5a40835d7669875840a, type: 3}
+      propertyPath: cellManager
+      value: 
+      objectReference: {fileID: 112570290}
     - target: {fileID: 8315182419893091978, guid: 187783913f7fc5a40835d7669875840a, type: 3}
       propertyPath: m_RootOrder
       value: 68
@@ -2627,6 +2781,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cell (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 3448272501365828897, guid: 187783913f7fc5a40835d7669875840a, type: 3}
+      propertyPath: cellManager
+      value: 
+      objectReference: {fileID: 112570290}
     - target: {fileID: 8315182419893091978, guid: 187783913f7fc5a40835d7669875840a, type: 3}
       propertyPath: m_RootOrder
       value: 9
@@ -2689,6 +2847,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cell (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 3448272501365828897, guid: 187783913f7fc5a40835d7669875840a, type: 3}
+      propertyPath: cellManager
+      value: 
+      objectReference: {fileID: 112570290}
     - target: {fileID: 8315182419893091978, guid: 187783913f7fc5a40835d7669875840a, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -2751,6 +2913,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cell (89)
       objectReference: {fileID: 0}
+    - target: {fileID: 3448272501365828897, guid: 187783913f7fc5a40835d7669875840a, type: 3}
+      propertyPath: cellManager
+      value: 
+      objectReference: {fileID: 112570290}
     - target: {fileID: 8315182419893091978, guid: 187783913f7fc5a40835d7669875840a, type: 3}
       propertyPath: m_RootOrder
       value: 89
@@ -2813,6 +2979,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cell (62)
       objectReference: {fileID: 0}
+    - target: {fileID: 3448272501365828897, guid: 187783913f7fc5a40835d7669875840a, type: 3}
+      propertyPath: cellManager
+      value: 
+      objectReference: {fileID: 112570290}
     - target: {fileID: 8315182419893091978, guid: 187783913f7fc5a40835d7669875840a, type: 3}
       propertyPath: m_RootOrder
       value: 62
@@ -2875,6 +3045,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cell (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 3448272501365828897, guid: 187783913f7fc5a40835d7669875840a, type: 3}
+      propertyPath: cellManager
+      value: 
+      objectReference: {fileID: 112570290}
     - target: {fileID: 8315182419893091978, guid: 187783913f7fc5a40835d7669875840a, type: 3}
       propertyPath: m_RootOrder
       value: 13
@@ -2937,6 +3111,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cell (85)
       objectReference: {fileID: 0}
+    - target: {fileID: 3448272501365828897, guid: 187783913f7fc5a40835d7669875840a, type: 3}
+      propertyPath: cellManager
+      value: 
+      objectReference: {fileID: 112570290}
     - target: {fileID: 8315182419893091978, guid: 187783913f7fc5a40835d7669875840a, type: 3}
       propertyPath: m_RootOrder
       value: 85
@@ -2999,6 +3177,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cell (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 3448272501365828897, guid: 187783913f7fc5a40835d7669875840a, type: 3}
+      propertyPath: cellManager
+      value: 
+      objectReference: {fileID: 112570290}
     - target: {fileID: 8315182419893091978, guid: 187783913f7fc5a40835d7669875840a, type: 3}
       propertyPath: m_RootOrder
       value: 19
@@ -3061,6 +3243,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cell (96)
       objectReference: {fileID: 0}
+    - target: {fileID: 3448272501365828897, guid: 187783913f7fc5a40835d7669875840a, type: 3}
+      propertyPath: cellManager
+      value: 
+      objectReference: {fileID: 112570290}
     - target: {fileID: 8315182419893091978, guid: 187783913f7fc5a40835d7669875840a, type: 3}
       propertyPath: m_RootOrder
       value: 96
@@ -3123,6 +3309,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cell (99)
       objectReference: {fileID: 0}
+    - target: {fileID: 3448272501365828897, guid: 187783913f7fc5a40835d7669875840a, type: 3}
+      propertyPath: cellManager
+      value: 
+      objectReference: {fileID: 112570290}
     - target: {fileID: 8315182419893091978, guid: 187783913f7fc5a40835d7669875840a, type: 3}
       propertyPath: m_RootOrder
       value: 99
@@ -3185,6 +3375,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cell (71)
       objectReference: {fileID: 0}
+    - target: {fileID: 3448272501365828897, guid: 187783913f7fc5a40835d7669875840a, type: 3}
+      propertyPath: cellManager
+      value: 
+      objectReference: {fileID: 112570290}
     - target: {fileID: 8315182419893091978, guid: 187783913f7fc5a40835d7669875840a, type: 3}
       propertyPath: m_RootOrder
       value: 71
@@ -3247,6 +3441,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cell (95)
       objectReference: {fileID: 0}
+    - target: {fileID: 3448272501365828897, guid: 187783913f7fc5a40835d7669875840a, type: 3}
+      propertyPath: cellManager
+      value: 
+      objectReference: {fileID: 112570290}
     - target: {fileID: 8315182419893091978, guid: 187783913f7fc5a40835d7669875840a, type: 3}
       propertyPath: m_RootOrder
       value: 95
@@ -3309,6 +3507,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cell (90)
       objectReference: {fileID: 0}
+    - target: {fileID: 3448272501365828897, guid: 187783913f7fc5a40835d7669875840a, type: 3}
+      propertyPath: cellManager
+      value: 
+      objectReference: {fileID: 112570290}
     - target: {fileID: 8315182419893091978, guid: 187783913f7fc5a40835d7669875840a, type: 3}
       propertyPath: m_RootOrder
       value: 90
@@ -3371,6 +3573,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cell (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 3448272501365828897, guid: 187783913f7fc5a40835d7669875840a, type: 3}
+      propertyPath: cellManager
+      value: 
+      objectReference: {fileID: 112570290}
     - target: {fileID: 8315182419893091978, guid: 187783913f7fc5a40835d7669875840a, type: 3}
       propertyPath: m_RootOrder
       value: 24
@@ -3433,6 +3639,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cell (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 3448272501365828897, guid: 187783913f7fc5a40835d7669875840a, type: 3}
+      propertyPath: cellManager
+      value: 
+      objectReference: {fileID: 112570290}
     - target: {fileID: 8315182419893091978, guid: 187783913f7fc5a40835d7669875840a, type: 3}
       propertyPath: m_RootOrder
       value: 8
@@ -3495,6 +3705,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cell (47)
       objectReference: {fileID: 0}
+    - target: {fileID: 3448272501365828897, guid: 187783913f7fc5a40835d7669875840a, type: 3}
+      propertyPath: cellManager
+      value: 
+      objectReference: {fileID: 112570290}
     - target: {fileID: 8315182419893091978, guid: 187783913f7fc5a40835d7669875840a, type: 3}
       propertyPath: m_RootOrder
       value: 47
@@ -3557,6 +3771,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cell (78)
       objectReference: {fileID: 0}
+    - target: {fileID: 3448272501365828897, guid: 187783913f7fc5a40835d7669875840a, type: 3}
+      propertyPath: cellManager
+      value: 
+      objectReference: {fileID: 112570290}
     - target: {fileID: 8315182419893091978, guid: 187783913f7fc5a40835d7669875840a, type: 3}
       propertyPath: m_RootOrder
       value: 78
@@ -3619,6 +3837,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cell (93)
       objectReference: {fileID: 0}
+    - target: {fileID: 3448272501365828897, guid: 187783913f7fc5a40835d7669875840a, type: 3}
+      propertyPath: cellManager
+      value: 
+      objectReference: {fileID: 112570290}
     - target: {fileID: 8315182419893091978, guid: 187783913f7fc5a40835d7669875840a, type: 3}
       propertyPath: m_RootOrder
       value: 93
@@ -3681,6 +3903,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cell (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 3448272501365828897, guid: 187783913f7fc5a40835d7669875840a, type: 3}
+      propertyPath: cellManager
+      value: 
+      objectReference: {fileID: 112570290}
     - target: {fileID: 8315182419893091978, guid: 187783913f7fc5a40835d7669875840a, type: 3}
       propertyPath: m_RootOrder
       value: 23
@@ -3743,6 +3969,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cell (97)
       objectReference: {fileID: 0}
+    - target: {fileID: 3448272501365828897, guid: 187783913f7fc5a40835d7669875840a, type: 3}
+      propertyPath: cellManager
+      value: 
+      objectReference: {fileID: 112570290}
     - target: {fileID: 8315182419893091978, guid: 187783913f7fc5a40835d7669875840a, type: 3}
       propertyPath: m_RootOrder
       value: 97
@@ -3805,6 +4035,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cell (76)
       objectReference: {fileID: 0}
+    - target: {fileID: 3448272501365828897, guid: 187783913f7fc5a40835d7669875840a, type: 3}
+      propertyPath: cellManager
+      value: 
+      objectReference: {fileID: 112570290}
     - target: {fileID: 8315182419893091978, guid: 187783913f7fc5a40835d7669875840a, type: 3}
       propertyPath: m_RootOrder
       value: 76
@@ -3867,6 +4101,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cell (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 3448272501365828897, guid: 187783913f7fc5a40835d7669875840a, type: 3}
+      propertyPath: cellManager
+      value: 
+      objectReference: {fileID: 112570290}
     - target: {fileID: 8315182419893091978, guid: 187783913f7fc5a40835d7669875840a, type: 3}
       propertyPath: m_RootOrder
       value: 21
@@ -3929,6 +4167,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cell (72)
       objectReference: {fileID: 0}
+    - target: {fileID: 3448272501365828897, guid: 187783913f7fc5a40835d7669875840a, type: 3}
+      propertyPath: cellManager
+      value: 
+      objectReference: {fileID: 112570290}
     - target: {fileID: 8315182419893091978, guid: 187783913f7fc5a40835d7669875840a, type: 3}
       propertyPath: m_RootOrder
       value: 72
@@ -3991,6 +4233,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cell (40)
       objectReference: {fileID: 0}
+    - target: {fileID: 3448272501365828897, guid: 187783913f7fc5a40835d7669875840a, type: 3}
+      propertyPath: cellManager
+      value: 
+      objectReference: {fileID: 112570290}
     - target: {fileID: 8315182419893091978, guid: 187783913f7fc5a40835d7669875840a, type: 3}
       propertyPath: m_RootOrder
       value: 40
@@ -4053,6 +4299,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cell (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 3448272501365828897, guid: 187783913f7fc5a40835d7669875840a, type: 3}
+      propertyPath: cellManager
+      value: 
+      objectReference: {fileID: 112570290}
     - target: {fileID: 8315182419893091978, guid: 187783913f7fc5a40835d7669875840a, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -4115,6 +4365,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cell (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 3448272501365828897, guid: 187783913f7fc5a40835d7669875840a, type: 3}
+      propertyPath: cellManager
+      value: 
+      objectReference: {fileID: 112570290}
     - target: {fileID: 8315182419893091978, guid: 187783913f7fc5a40835d7669875840a, type: 3}
       propertyPath: m_RootOrder
       value: 12
@@ -4177,6 +4431,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cell (54)
       objectReference: {fileID: 0}
+    - target: {fileID: 3448272501365828897, guid: 187783913f7fc5a40835d7669875840a, type: 3}
+      propertyPath: cellManager
+      value: 
+      objectReference: {fileID: 112570290}
     - target: {fileID: 8315182419893091978, guid: 187783913f7fc5a40835d7669875840a, type: 3}
       propertyPath: m_RootOrder
       value: 54
@@ -4239,6 +4497,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cell (44)
       objectReference: {fileID: 0}
+    - target: {fileID: 3448272501365828897, guid: 187783913f7fc5a40835d7669875840a, type: 3}
+      propertyPath: cellManager
+      value: 
+      objectReference: {fileID: 112570290}
     - target: {fileID: 8315182419893091978, guid: 187783913f7fc5a40835d7669875840a, type: 3}
       propertyPath: m_RootOrder
       value: 44
@@ -4301,6 +4563,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cell (49)
       objectReference: {fileID: 0}
+    - target: {fileID: 3448272501365828897, guid: 187783913f7fc5a40835d7669875840a, type: 3}
+      propertyPath: cellManager
+      value: 
+      objectReference: {fileID: 112570290}
     - target: {fileID: 8315182419893091978, guid: 187783913f7fc5a40835d7669875840a, type: 3}
       propertyPath: m_RootOrder
       value: 49
@@ -4363,6 +4629,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cell (67)
       objectReference: {fileID: 0}
+    - target: {fileID: 3448272501365828897, guid: 187783913f7fc5a40835d7669875840a, type: 3}
+      propertyPath: cellManager
+      value: 
+      objectReference: {fileID: 112570290}
     - target: {fileID: 8315182419893091978, guid: 187783913f7fc5a40835d7669875840a, type: 3}
       propertyPath: m_RootOrder
       value: 67
@@ -4425,6 +4695,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cell (75)
       objectReference: {fileID: 0}
+    - target: {fileID: 3448272501365828897, guid: 187783913f7fc5a40835d7669875840a, type: 3}
+      propertyPath: cellManager
+      value: 
+      objectReference: {fileID: 112570290}
     - target: {fileID: 8315182419893091978, guid: 187783913f7fc5a40835d7669875840a, type: 3}
       propertyPath: m_RootOrder
       value: 75
@@ -4487,6 +4761,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cell (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 3448272501365828897, guid: 187783913f7fc5a40835d7669875840a, type: 3}
+      propertyPath: cellManager
+      value: 
+      objectReference: {fileID: 112570290}
     - target: {fileID: 8315182419893091978, guid: 187783913f7fc5a40835d7669875840a, type: 3}
       propertyPath: m_RootOrder
       value: 22
@@ -4549,6 +4827,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cell (42)
       objectReference: {fileID: 0}
+    - target: {fileID: 3448272501365828897, guid: 187783913f7fc5a40835d7669875840a, type: 3}
+      propertyPath: cellManager
+      value: 
+      objectReference: {fileID: 112570290}
     - target: {fileID: 8315182419893091978, guid: 187783913f7fc5a40835d7669875840a, type: 3}
       propertyPath: m_RootOrder
       value: 42
@@ -4611,6 +4893,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cell (27)
       objectReference: {fileID: 0}
+    - target: {fileID: 3448272501365828897, guid: 187783913f7fc5a40835d7669875840a, type: 3}
+      propertyPath: cellManager
+      value: 
+      objectReference: {fileID: 112570290}
     - target: {fileID: 8315182419893091978, guid: 187783913f7fc5a40835d7669875840a, type: 3}
       propertyPath: m_RootOrder
       value: 27
@@ -4673,6 +4959,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cell (48)
       objectReference: {fileID: 0}
+    - target: {fileID: 3448272501365828897, guid: 187783913f7fc5a40835d7669875840a, type: 3}
+      propertyPath: cellManager
+      value: 
+      objectReference: {fileID: 112570290}
     - target: {fileID: 8315182419893091978, guid: 187783913f7fc5a40835d7669875840a, type: 3}
       propertyPath: m_RootOrder
       value: 48
@@ -4735,6 +5025,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cell (82)
       objectReference: {fileID: 0}
+    - target: {fileID: 3448272501365828897, guid: 187783913f7fc5a40835d7669875840a, type: 3}
+      propertyPath: cellManager
+      value: 
+      objectReference: {fileID: 112570290}
     - target: {fileID: 8315182419893091978, guid: 187783913f7fc5a40835d7669875840a, type: 3}
       propertyPath: m_RootOrder
       value: 82
@@ -4797,6 +5091,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cell (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 3448272501365828897, guid: 187783913f7fc5a40835d7669875840a, type: 3}
+      propertyPath: cellManager
+      value: 
+      objectReference: {fileID: 112570290}
     - target: {fileID: 8315182419893091978, guid: 187783913f7fc5a40835d7669875840a, type: 3}
       propertyPath: m_RootOrder
       value: 20
@@ -4859,6 +5157,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cell (43)
       objectReference: {fileID: 0}
+    - target: {fileID: 3448272501365828897, guid: 187783913f7fc5a40835d7669875840a, type: 3}
+      propertyPath: cellManager
+      value: 
+      objectReference: {fileID: 112570290}
     - target: {fileID: 8315182419893091978, guid: 187783913f7fc5a40835d7669875840a, type: 3}
       propertyPath: m_RootOrder
       value: 43
@@ -4921,6 +5223,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cell (35)
       objectReference: {fileID: 0}
+    - target: {fileID: 3448272501365828897, guid: 187783913f7fc5a40835d7669875840a, type: 3}
+      propertyPath: cellManager
+      value: 
+      objectReference: {fileID: 112570290}
     - target: {fileID: 8315182419893091978, guid: 187783913f7fc5a40835d7669875840a, type: 3}
       propertyPath: m_RootOrder
       value: 35
@@ -4983,6 +5289,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cell (57)
       objectReference: {fileID: 0}
+    - target: {fileID: 3448272501365828897, guid: 187783913f7fc5a40835d7669875840a, type: 3}
+      propertyPath: cellManager
+      value: 
+      objectReference: {fileID: 112570290}
     - target: {fileID: 8315182419893091978, guid: 187783913f7fc5a40835d7669875840a, type: 3}
       propertyPath: m_RootOrder
       value: 57
@@ -5045,6 +5355,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cell (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 3448272501365828897, guid: 187783913f7fc5a40835d7669875840a, type: 3}
+      propertyPath: cellManager
+      value: 
+      objectReference: {fileID: 112570290}
     - target: {fileID: 8315182419893091978, guid: 187783913f7fc5a40835d7669875840a, type: 3}
       propertyPath: m_RootOrder
       value: 11
@@ -5107,6 +5421,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cell (87)
       objectReference: {fileID: 0}
+    - target: {fileID: 3448272501365828897, guid: 187783913f7fc5a40835d7669875840a, type: 3}
+      propertyPath: cellManager
+      value: 
+      objectReference: {fileID: 112570290}
     - target: {fileID: 8315182419893091978, guid: 187783913f7fc5a40835d7669875840a, type: 3}
       propertyPath: m_RootOrder
       value: 87
@@ -5169,6 +5487,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cell (33)
       objectReference: {fileID: 0}
+    - target: {fileID: 3448272501365828897, guid: 187783913f7fc5a40835d7669875840a, type: 3}
+      propertyPath: cellManager
+      value: 
+      objectReference: {fileID: 112570290}
     - target: {fileID: 8315182419893091978, guid: 187783913f7fc5a40835d7669875840a, type: 3}
       propertyPath: m_RootOrder
       value: 33
@@ -5231,6 +5553,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cell (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 3448272501365828897, guid: 187783913f7fc5a40835d7669875840a, type: 3}
+      propertyPath: cellManager
+      value: 
+      objectReference: {fileID: 112570290}
     - target: {fileID: 8315182419893091978, guid: 187783913f7fc5a40835d7669875840a, type: 3}
       propertyPath: m_RootOrder
       value: 15
@@ -5293,6 +5619,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cell (39)
       objectReference: {fileID: 0}
+    - target: {fileID: 3448272501365828897, guid: 187783913f7fc5a40835d7669875840a, type: 3}
+      propertyPath: cellManager
+      value: 
+      objectReference: {fileID: 112570290}
     - target: {fileID: 8315182419893091978, guid: 187783913f7fc5a40835d7669875840a, type: 3}
       propertyPath: m_RootOrder
       value: 39
@@ -5355,6 +5685,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cell (91)
       objectReference: {fileID: 0}
+    - target: {fileID: 3448272501365828897, guid: 187783913f7fc5a40835d7669875840a, type: 3}
+      propertyPath: cellManager
+      value: 
+      objectReference: {fileID: 112570290}
     - target: {fileID: 8315182419893091978, guid: 187783913f7fc5a40835d7669875840a, type: 3}
       propertyPath: m_RootOrder
       value: 91
@@ -5417,6 +5751,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cell (77)
       objectReference: {fileID: 0}
+    - target: {fileID: 3448272501365828897, guid: 187783913f7fc5a40835d7669875840a, type: 3}
+      propertyPath: cellManager
+      value: 
+      objectReference: {fileID: 112570290}
     - target: {fileID: 8315182419893091978, guid: 187783913f7fc5a40835d7669875840a, type: 3}
       propertyPath: m_RootOrder
       value: 77
@@ -5479,6 +5817,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cell (51)
       objectReference: {fileID: 0}
+    - target: {fileID: 3448272501365828897, guid: 187783913f7fc5a40835d7669875840a, type: 3}
+      propertyPath: cellManager
+      value: 
+      objectReference: {fileID: 112570290}
     - target: {fileID: 8315182419893091978, guid: 187783913f7fc5a40835d7669875840a, type: 3}
       propertyPath: m_RootOrder
       value: 51
@@ -5541,6 +5883,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cell (37)
       objectReference: {fileID: 0}
+    - target: {fileID: 3448272501365828897, guid: 187783913f7fc5a40835d7669875840a, type: 3}
+      propertyPath: cellManager
+      value: 
+      objectReference: {fileID: 112570290}
     - target: {fileID: 8315182419893091978, guid: 187783913f7fc5a40835d7669875840a, type: 3}
       propertyPath: m_RootOrder
       value: 37
@@ -5603,6 +5949,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cell (50)
       objectReference: {fileID: 0}
+    - target: {fileID: 3448272501365828897, guid: 187783913f7fc5a40835d7669875840a, type: 3}
+      propertyPath: cellManager
+      value: 
+      objectReference: {fileID: 112570290}
     - target: {fileID: 8315182419893091978, guid: 187783913f7fc5a40835d7669875840a, type: 3}
       propertyPath: m_RootOrder
       value: 50
@@ -5665,6 +6015,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cell (80)
       objectReference: {fileID: 0}
+    - target: {fileID: 3448272501365828897, guid: 187783913f7fc5a40835d7669875840a, type: 3}
+      propertyPath: cellManager
+      value: 
+      objectReference: {fileID: 112570290}
     - target: {fileID: 8315182419893091978, guid: 187783913f7fc5a40835d7669875840a, type: 3}
       propertyPath: m_RootOrder
       value: 80
@@ -5751,8 +6105,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -510, y: 0}
-  m_SizeDelta: {x: 721.04, y: 555.4}
+  m_AnchoredPosition: {x: -451, y: 0}
+  m_SizeDelta: {x: 821.9, y: 555.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1672298159
 MonoBehaviour:
@@ -5786,9 +6140,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "<b><size=150%>Genetic Algorithm Demonstration</size></b>\n\n<b>Current
-    Generation:</b> \n<b>Current Genome:</b> \n<b>Current Fitness:</b> \n<b>Time
-    Elapsed:</b> \n"
+  m_text: '<b><size=150%>Genetic Algorithm Demonstration</size></b>
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -5876,6 +6230,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cell (31)
       objectReference: {fileID: 0}
+    - target: {fileID: 3448272501365828897, guid: 187783913f7fc5a40835d7669875840a, type: 3}
+      propertyPath: cellManager
+      value: 
+      objectReference: {fileID: 112570290}
     - target: {fileID: 8315182419893091978, guid: 187783913f7fc5a40835d7669875840a, type: 3}
       propertyPath: m_RootOrder
       value: 31
@@ -5938,6 +6296,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cell (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 3448272501365828897, guid: 187783913f7fc5a40835d7669875840a, type: 3}
+      propertyPath: cellManager
+      value: 
+      objectReference: {fileID: 112570290}
     - target: {fileID: 8315182419893091978, guid: 187783913f7fc5a40835d7669875840a, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -6000,6 +6362,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cell (41)
       objectReference: {fileID: 0}
+    - target: {fileID: 3448272501365828897, guid: 187783913f7fc5a40835d7669875840a, type: 3}
+      propertyPath: cellManager
+      value: 
+      objectReference: {fileID: 112570290}
     - target: {fileID: 8315182419893091978, guid: 187783913f7fc5a40835d7669875840a, type: 3}
       propertyPath: m_RootOrder
       value: 41
@@ -6062,6 +6428,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cell (63)
       objectReference: {fileID: 0}
+    - target: {fileID: 3448272501365828897, guid: 187783913f7fc5a40835d7669875840a, type: 3}
+      propertyPath: cellManager
+      value: 
+      objectReference: {fileID: 112570290}
     - target: {fileID: 8315182419893091978, guid: 187783913f7fc5a40835d7669875840a, type: 3}
       propertyPath: m_RootOrder
       value: 63
@@ -6124,6 +6494,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cell (70)
       objectReference: {fileID: 0}
+    - target: {fileID: 3448272501365828897, guid: 187783913f7fc5a40835d7669875840a, type: 3}
+      propertyPath: cellManager
+      value: 
+      objectReference: {fileID: 112570290}
     - target: {fileID: 8315182419893091978, guid: 187783913f7fc5a40835d7669875840a, type: 3}
       propertyPath: m_RootOrder
       value: 70
@@ -6186,6 +6560,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cell (45)
       objectReference: {fileID: 0}
+    - target: {fileID: 3448272501365828897, guid: 187783913f7fc5a40835d7669875840a, type: 3}
+      propertyPath: cellManager
+      value: 
+      objectReference: {fileID: 112570290}
     - target: {fileID: 8315182419893091978, guid: 187783913f7fc5a40835d7669875840a, type: 3}
       propertyPath: m_RootOrder
       value: 45
@@ -6248,6 +6626,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cell (56)
       objectReference: {fileID: 0}
+    - target: {fileID: 3448272501365828897, guid: 187783913f7fc5a40835d7669875840a, type: 3}
+      propertyPath: cellManager
+      value: 
+      objectReference: {fileID: 112570290}
     - target: {fileID: 8315182419893091978, guid: 187783913f7fc5a40835d7669875840a, type: 3}
       propertyPath: m_RootOrder
       value: 56
@@ -6310,6 +6692,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cell (86)
       objectReference: {fileID: 0}
+    - target: {fileID: 3448272501365828897, guid: 187783913f7fc5a40835d7669875840a, type: 3}
+      propertyPath: cellManager
+      value: 
+      objectReference: {fileID: 112570290}
     - target: {fileID: 8315182419893091978, guid: 187783913f7fc5a40835d7669875840a, type: 3}
       propertyPath: m_RootOrder
       value: 86
@@ -6372,6 +6758,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cell (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 3448272501365828897, guid: 187783913f7fc5a40835d7669875840a, type: 3}
+      propertyPath: cellManager
+      value: 
+      objectReference: {fileID: 112570290}
     - target: {fileID: 8315182419893091978, guid: 187783913f7fc5a40835d7669875840a, type: 3}
       propertyPath: m_RootOrder
       value: 10
@@ -6551,6 +6941,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cell (34)
       objectReference: {fileID: 0}
+    - target: {fileID: 3448272501365828897, guid: 187783913f7fc5a40835d7669875840a, type: 3}
+      propertyPath: cellManager
+      value: 
+      objectReference: {fileID: 112570290}
     - target: {fileID: 8315182419893091978, guid: 187783913f7fc5a40835d7669875840a, type: 3}
       propertyPath: m_RootOrder
       value: 34
@@ -6737,25 +7131,36 @@ MonoBehaviour:
   setText: {fileID: 1672298159}
   GameSpeed: 20
   prefab: {fileID: 7423233444246318579, guid: 8c0da3489931e014f8701df3d3f851b6, type: 3}
-  randomiseGridNumber: 25
-  numberOfGoals: 0
-  numberOfCollisions: 0
-  numberOfCellsVisited: 0
+  randomiseGridNumber: 100
   populationSize: 100
   timeframe: 75
   spawnRate: 0.01
   cells: {fileID: 112570288}
-  layers: 0b0000000a00000005000000
-  MutationChance: 0.01
+  goalReached: 0
+  forceResetCounter: 0
+  layers: 120000000a00000005000000
+  MutationChance: 0.1
   MutationStrength: 0.5
   PercentageOfMutatedAgents: 0.5
-  UseRandomAgents: 1
-  PercentageOfRandomAgents: 0.15
+  UseRandomAgents: 0
+  PercentageOfRandomAgents: 0.25
   hyperMutation: 1
-  CheckMutation: 5
+  CheckMutation: 20
   CheckMutationCounter: 0
   eliteBased: 0
   timeSinceStart: 0
+  maxStepCount: 3000000
+  currentStepCount: 0
+  resetStepCounter: 0
+  resetStepCount: 0
+  totalDistanceCovered: 0
+  numberOfCollisions: 0
+  numberOfGoals: 0
+  maximumFitness: 0
+  breadcrumbs: 1
+  fitnessFunction: F6-RESETGOAL75timeframeRESETALL-100pop-ALLCELLS
+  resetOnGridCompletion: 0
+  cellManager: {fileID: 112570290}
 --- !u!1001 &2017819768
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6767,6 +7172,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cell (26)
       objectReference: {fileID: 0}
+    - target: {fileID: 3448272501365828897, guid: 187783913f7fc5a40835d7669875840a, type: 3}
+      propertyPath: cellManager
+      value: 
+      objectReference: {fileID: 112570290}
     - target: {fileID: 8315182419893091978, guid: 187783913f7fc5a40835d7669875840a, type: 3}
       propertyPath: m_RootOrder
       value: 26
@@ -6829,6 +7238,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cell (83)
       objectReference: {fileID: 0}
+    - target: {fileID: 3448272501365828897, guid: 187783913f7fc5a40835d7669875840a, type: 3}
+      propertyPath: cellManager
+      value: 
+      objectReference: {fileID: 112570290}
     - target: {fileID: 8315182419893091978, guid: 187783913f7fc5a40835d7669875840a, type: 3}
       propertyPath: m_RootOrder
       value: 83
@@ -6891,6 +7304,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cell (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 3448272501365828897, guid: 187783913f7fc5a40835d7669875840a, type: 3}
+      propertyPath: cellManager
+      value: 
+      objectReference: {fileID: 112570290}
     - target: {fileID: 8315182419893091978, guid: 187783913f7fc5a40835d7669875840a, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -6953,6 +7370,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cell (94)
       objectReference: {fileID: 0}
+    - target: {fileID: 3448272501365828897, guid: 187783913f7fc5a40835d7669875840a, type: 3}
+      propertyPath: cellManager
+      value: 
+      objectReference: {fileID: 112570290}
     - target: {fileID: 8315182419893091978, guid: 187783913f7fc5a40835d7669875840a, type: 3}
       propertyPath: m_RootOrder
       value: 94
@@ -7079,7 +7500,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1209183719550709668}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.7, y: 10.25, z: 66.1}
+  m_LocalPosition: {x: -77, y: 10.25, z: -17}
   m_LocalScale: {x: 20, y: 20, z: 20}
   m_Children:
   - {fileID: 9171646012295643275}
@@ -7198,6 +7619,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   grid: {fileID: 9085234637394018395}
+  cellManager: {fileID: 112570290}
+  shouldMoveOnVisitedCell: 1
 --- !u!1 &5270176065495183546
 GameObject:
   m_ObjectHideFlags: 0
@@ -7284,6 +7707,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cell
       objectReference: {fileID: 0}
+    - target: {fileID: 3448272501365828897, guid: 187783913f7fc5a40835d7669875840a, type: 3}
+      propertyPath: cellManager
+      value: 
+      objectReference: {fileID: 112570290}
     - target: {fileID: 8315182419893091978, guid: 187783913f7fc5a40835d7669875840a, type: 3}
       propertyPath: m_RootOrder
       value: 0

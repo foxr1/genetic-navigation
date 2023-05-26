@@ -6,6 +6,7 @@ using Grpc.Core;
 
 public class NeuralNetwork : IComparable<NeuralNetwork>
 {
+    public int agentNo;
     public int[] layers;//layers
     public float[][] neurons;//neurons
     public float[][] biases;//biasses
@@ -18,7 +19,7 @@ public class NeuralNetwork : IComparable<NeuralNetwork>
     public float learningRate = 0.01f;//learning rate
     public float cost = 0;
 
-    public NeuralNetwork(int[] layers)
+    public NeuralNetwork(int[] layers, int agentNo)
     {
         this.layers = new int[layers.Length];
         for (int i = 0; i < layers.Length; i++)
@@ -28,6 +29,7 @@ public class NeuralNetwork : IComparable<NeuralNetwork>
         InitNeurons();
         InitBiases();
         InitWeights();
+        this.agentNo = agentNo;
     }
 
     private void InitNeurons()//create empty storage array for the neurons in the network.
@@ -99,11 +101,11 @@ public class NeuralNetwork : IComparable<NeuralNetwork>
         return neurons[neurons.Length - 1];
     }
 
-    public float sigmoid(float x)
-    {
-        float k = (float)Math.Exp(x);
-        return k / (1.0f + k);
-    }
+    //public float sigmoid(float x)
+    //{
+    //    float k = (float)Math.Exp(x);
+    //    return k / (1.0f + k);
+    //}
 
     public float activate(float value)
     {
@@ -151,28 +153,6 @@ public class NeuralNetwork : IComparable<NeuralNetwork>
     }
 
     public NeuralNetwork copy(NeuralNetwork nn) //For creatinga deep copy, to ensure arrays are serialzed.
-    {
-        for (int i = 0; i < biases.Length; i++)
-        {
-            for (int j = 0; j < biases[i].Length; j++)
-            {
-                nn.biases[i][j] = biases[i][j];
-            }
-        }
-        for (int i = 0; i < weights.Length; i++)
-        {
-            for (int j = 0; j < weights[i].Length; j++)
-            {
-                for (int k = 0; k < weights[i][j].Length; k++)
-                {
-                    nn.weights[i][j][k] = weights[i][j][k];
-                }
-            }
-        }
-        return nn;
-    }
-
-    public NeuralNetwork HyperMutation(NeuralNetwork nn)
     {
         for (int i = 0; i < biases.Length; i++)
         {

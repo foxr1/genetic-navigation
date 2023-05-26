@@ -1,0 +1,9 @@
+Distance covered: 98897.33
+No. of collisions: 113111
+Cells visited: 98
+Cells visited multiple times: 98
+Max times one cell was visited: 160532
+No. of goals reached in total: 17090
+Maximum fitness: Infinity
+No. of generations: 800
+Time elapsed: 3063.135

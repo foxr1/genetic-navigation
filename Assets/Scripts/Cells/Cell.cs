@@ -9,6 +9,7 @@ public class Cell : MonoBehaviour
 
     [SerializeField] private Material visitedMat;
     [SerializeField] private Material unvisitedMat;
+    [SerializeField] private CellManager cellManager;
 
     // Update is called once per frame
     void Update()
@@ -27,7 +28,11 @@ public class Cell : MonoBehaviour
     {
         if (other.CompareTag("Agent"))
         {
-            hasVisited = true;
+            if (!hasVisited)
+            {
+                hasVisited = true;
+                cellManager.numberOfCellsVisited++;
+            }
             timesVisited++;
         }
     }
